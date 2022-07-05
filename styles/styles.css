@@ -808,6 +808,9 @@ body {
 }
 
 .thankYou h3 {
+  position: absolute;
+  left:53vh;
+  bottom: 70vh;
   font-size: 40px;
   font-family: raleway;
   color: white;
@@ -818,6 +821,7 @@ body {
   font-family: montserart;
   padding-top: 20px;
   font-size: 35px;
+text-decoration: none;
 }
 
 #typedd {
@@ -839,4 +843,141 @@ body {
 #typedd .strong {
   color: #e04598;
 }
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  
+}
+.one {
+  /* background: hwb(270 31% 63%); */
+  display: flex;
+  justify-content: center;
+align-items: center;
+margin-top: 4vh;
+margin-left: 7vw;
+  
+}
+
+.bothPages{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 4vh;
+/* margin-left: 10vw; */
+position: relative;
+width: 100%;
+}
+.res1{
+  top: 45%;
+  height: 92vh;
+  width: 45vw;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 10px 10px 9px #7d7b7b;}
+ .res2{
+  height: 92vh;
+  right:25%;
+  top: 8%;
+  width: 45vw;
+  z-index: -1;
+  box-shadow: 1px 1px 9px #7d7b7b;
+  /* padding-right: 10vw; */
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.backButton{
+  
+  position: absolute;
+  left:2vw;
+  top:2vh; 
+  padding:2px;
+  height:5em;
+  opacity:0;
+}
+
+.rightBtn{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height:5em;
+right:20%;
+top:45vh;
+
+}
+
+.res2flipped{
+  z-index: 2;
+  box-shadow: -15px 50px 9px #7d7b7b;}
+
+  .res1flipped{
+    height: 92vh;
+    left:15%;
+    top: 8%;
+    width: 45vw;
+    z-index: -1;
+    /* padding-right: 10vw; */
+    position: absolute;
+    opacity: 0.5;
+  }
+
+#arrowFirst{
+  margin-left: 5vw;
+  font-size: 2rem;
+  z-index: -1;
+}
+#arrowSecond{
+  padding-right: 5vw;
+  margin-right: 5vw;
+  /* transform: rotateY(180deg); */
+  z-index: -1;
+
+  font-size: 2rem;
+  /* translate: rotate(180deg); */
+}
+
+.resumeLink{
+text-decoration: none;
+text-decoration-skip: unset;
+}
+.two {
+  /* background: #564e5e; */
+  margin-left: 45vw;
+  margin-top: 4vh;
+
+  display: flex;
+  justify-content: center;
+align-items: center;
+/* border: 1px solid black */
+
+}
+
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display:none;
+    display: flex;
+  flex-direction: row;
+  width: 170vw;
+
+  }
+  .outer-wrapper {
+    width: 100vh;
+  /* opacity: 0.5; */
+
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
 /*# sourceMappingURL=styles.css.map */
