@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet"
+          href="styles/styles.css">
+          <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div>
+    <a href = "index.html"><img src="https://i.ibb.co/6JfZsgS/redarrowflip.png"  id = "backBtn" class = "backButton"></a>
+</div>
+<div class = "bothPages">
+
+    <img src="https://i.ibb.co/Thnyx11/Tanishq-s-Resume-1umass.jpg" class ="res1" id = "res1Id" onclick="goToresume1()">
+    <img src="https://i.ibb.co/kMGXPjB/resume2.jpg" class = "res2" id = "res2Id" onclick="goToresume2()">
+    <img src="https://i.ibb.co/hmdXX81/redarrow.png" class = "rightBtn animate__animated animate__fadeInLeft animate__delay-3s" id = "rightBtn" onclick="goToresume2()">
+
+
+
+</div>
+<script>
+ var element1 = document.getElementById("res1Id");
+ var element2 = document.getElementById("res2Id");
+ var backBtn = document.getElementById("backBtn");
+ var rightBtn = document.getElementById("rightBtn");
+ var num1 = 5;
+var num2 = 5;
+function goToresume2(){
+        element2.style.zIndex="2";
+        element2.style.opacity="1";
+        element1.style.zIndex = "-1";
+        element1.style.opacity = "0.5";
+        element2.style.boxShadow = "-15px 15px 9px #7d7b7b";
+        backBtn.style.opacity = "1";
+        rightBtn.style.opacity = "0";
+        // element2.classList.toggle("animate__animated" ,"animate__zoomInRight");
+       
+
+
+}
+function goToresume1(){
+        element1.style.zIndex="2";
+        element1.style.opacity="1";
+        element2.style.zIndex = "-1"
+        element2.style.opacity = "0.5"
+        element2.style.boxShadow = "-1px 1px 9px #7d7b7b";
+        // element1.classList.toggle("animate__animated" ,"animate__zoomInRight");
+       
+}
+
+</script>
+</body>
